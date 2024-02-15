@@ -1,0 +1,77 @@
+{
+  "NUMBER_OF_PAGES": 10,
+  "WAIT_TIME_LARGE": 20,
+  "WAIT_TIME_SMALL": 5,
+
+  "LINKS": {
+    "START_LINK": "https://www.sothebys.com/en/",
+    "AUCTION_LINK": "https://www.sothebys.com/en/buy/auction/",
+    "RESULTS_LINK": "https://www.sothebys.com/en/results?locale=en"
+  },
+
+  "LOGIN_X_PATHS": {
+    "LOG_IN_START_BUTTON": "//div[@class='LinkedText']//a[text()='Log In']",
+    "USERNAME_TEXT_BOX": "//div[@class='form-input-row ']//input[@id='email']",
+    "PASSWORD_TEXT_BOX": "//*[@id=\"password\"]",
+    "LOG_IN_FINISH_BUTTON": "//button[@id='login-button-id']"
+  },
+
+  "GO_TO_RESULTS_X_PATHS": {
+    "X_PATH_LINK_1": "//div[@class='PageHeader-body']",
+    "X_PATH_LINK_2": "//div[@class='PageHeader-body']//div[@class='NavigationItemTitle']//span[text()='Auctions']",
+    "X_PATH_LINK_3": "//div[@class='SothebysTopNavigationItem']//div[@class='NavigationLink']//a[text()='Auction Results']"
+  },
+
+  "ITEM_DETAILS_FORMAT_1": {
+    "ITEM_LIST" : "css-1up9enl",
+    "AUTHOR": "css-1wrbfkg",
+    "TITLE_1": "css-3s3m4b",
+    "TITLE_2": "css-1ys2243",
+    "RESERVE": "label-module_label12Medium__THkRn css-1hu9w0v"
+  },
+
+  "ITEM_DETAILS_FORMAT_2": {
+    "ITEM_LIST" : "css-n8c3uc",
+    "AUTHOR": "headline-module_headline20Regular__zmXrx css-y1q8mr",
+    "TITLE": "paragraph-module_paragraph16Regular__CXt6G css-dmzrgh",
+    "RESERVE": "label-module_label12Medium__THkRn css-1xkt3wv"
+
+  },
+  "ITEM_DETAILS": {
+    "ESTIMATE_PRICE": "paragraph-module_paragraph14Regular__Zfr98 css-1ud9h99",
+    "PRICE_SOLD": "label-module_label14Medium__uD9e- css-1fbegxe"
+  },
+
+  "SQL_DATA_AWS" : {
+    "HOST" : "data-mining-db1.cttpnp4olbpx.us-west-1.rds.amazonaws.com",
+    "USER" : "noa_yosef",
+    "PASSWORD" : "noa_yosef",
+    "DATABASE" : "noa_yosef",
+    "CHARSET" : "utf8mb4"
+  },
+
+  "SQL_DATA_Local": {
+    "HOST" : "localhost",
+    "USER" : "root",
+    "PASSWORD" : "root",
+    "DATABASE" : "sothebys_db",
+    "CHARSET" : "utf8mb4"
+  },
+
+
+  "Artist_Scraper_Data": {
+    "Starting_Link" : "https://www.sothebys.com/en/search?locale=en&query=artists&tab=artistsmakers",
+    "page_info": "_1NKmJc-dm-eCxS4OCrXrR5",
+    "item_info_artists": "_3NZctpq_uZ_mC8NSFPQqk_",
+    "Artist": "Artist",
+    "artist_info" : "_3Dm_PuL3C5IuyJed8hRgRn",
+    "Artist_Link": "_3AU1X3oKP8TOvGyzhJI6eh oK8AyI4p9HdIRc7HuYLz6",
+    "Artist_Name": "ArtistPage-pageHeading",
+    "Artist_Life": "ArtistPage-artistInfo",
+    "Artist_Bio": "ArtistPage-bioText"
+  },
+
+  "Places_Scraper_Data" : {
+
+  }
+}
