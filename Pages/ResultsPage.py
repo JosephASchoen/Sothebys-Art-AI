@@ -2,6 +2,8 @@ import Util
 from bs4 import BeautifulSoup
 from Pages.CollectionPage import CollectionPage
 import time
+from typing import List
+from Entities import Collection
 
 
 class ResultsPage(object):
@@ -9,7 +11,7 @@ class ResultsPage(object):
         self.driver = driver
         self.config_data = config_data
 
-    def get_page_results(self, _url):
+    def get_page_results(self, _url) -> List[Collection]:
         print(_url)
         self.driver.get(_url)
         time.sleep(self.config_data['WAIT_TIME_SMALL'])

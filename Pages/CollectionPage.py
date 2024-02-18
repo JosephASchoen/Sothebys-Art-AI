@@ -8,7 +8,7 @@ class CollectionPage(object):
         self.driver = driver
         self.config_data = config_data
 
-    def get_collection(self, data):
+    def get_collection(self, data) -> Collection:
         category = Util.get_text(data, 'div', 'Card-category')
         title = Util.get_text(data, 'div', 'Card-title')
         details = Util.get_text(data, 'div', 'Card-details')

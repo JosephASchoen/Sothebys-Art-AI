@@ -9,6 +9,25 @@ class Collection:
         self.link = link
         self.items = items
 
+    def to_dict(self):
+        collection_dict = {
+            "collection_category": self.category,
+            "collection_title": self.title,
+            "collection_details": self.details,
+            "collection_price": self.price,
+        }
+
+        if self.items:
+            item_dicts = list(
+                map(
+                    lambda item: item.to_dict().update(collection_dict),
+                    self.items
+                )
+            )
+            return item_dicts
+
+        return collection_dict
+
     def print(self):
         print('\t', 'category:', self.category)
         print('\t', 'title:', self.title)
