@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from Pages.CollectionPage import CollectionPage
 import time
 from typing import List
-from Entities import Collection
+from Entities.Collection import Collection
 
 
 class ResultsPage(object):

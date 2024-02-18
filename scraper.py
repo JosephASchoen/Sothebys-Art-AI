@@ -5,9 +5,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from bs4 import BeautifulSoup
 import json
-from Pages import HomePage, LoginPage, ResultsPage
+from Pages.HomePage import HomePage
+from Pages.LoginPage import LoginPage
+from Pages.ResultsPage import ResultsPage
 from typing import List
-from Entities import Collection
+from Entities.Collection import Collection
 from functools import reduce
 
 
@@ -83,16 +85,16 @@ def main(start_page=1, number_of_pages=1) -> List[Collection]:
     driver = set_up_chromedriver()
     make_selenium_work(driver=driver)
 
-    home_page = HomePage.HomePage(driver=driver, config_data=config_data)
+    home_page = HomePage(driver=driver, config_data=config_data)
     home_page.get_page()
     home_page.go_to_login_page()
 
-    login_page = LoginPage.LoginPage(driver=driver, config_data=config_data)
+    login_page = LoginPage(driver=driver, config_data=config_data)
     login_page.login()
     login_page.go_to_home_page()
 
     home_page.go_to_results_page()
-    results_page = ResultsPage.ResultsPage(driver=driver, config_data=config_data)
+    results_page = ResultsPage(driver=driver, config_data=config_data)
 
     html = driver.page_source
     soup = BeautifulSoup(html, parser='html.parser', features="lxml")
