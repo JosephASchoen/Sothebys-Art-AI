@@ -41,7 +41,7 @@ with open('Config/config.json') as file:
 
 def set_up_chromedriver():
     #service = Service(executable_path='chromedriver.exe')
-    service = Service(ChromeDriverManager().install())
+    service = Service(ChromeDriverManager(driver_version='121.0.6167.184').install())
     options = Options()
     #options.add_argument('--headless')
     options.add_argument('--no-sandbox')
