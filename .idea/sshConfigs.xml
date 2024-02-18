@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="54.215.243.208" id="8481cd42-25f8-4383-8a5b-226d894a3891" keyPath="C:\Users\josep\.ssh\Web-Scraper-Key.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" useOpenSSHConfig="false" />
+    </configs>
+  </component>
+</project>
