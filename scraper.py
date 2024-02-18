@@ -40,10 +40,11 @@ with open('Config/config.json') as file:
 # todo make work on aws ec2
 
 def set_up_chromedriver():
-    #service = Service(executable_path='chromedriver.exe')
+    #service = Service(executable_path='chromedriver.exe') changed to line below
     service = Service(ChromeDriverManager(driver_version='121.0.6167.184').install())
     options = Options()
-    #options.add_argument('--headless')
+    options.add_argument('--headless')
+    options.add_argument('window-size=1920x1080')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument("start-maximized")
